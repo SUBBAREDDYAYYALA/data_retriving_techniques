@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <style>
+        table,th,td {
+            border : 3px solid rgb(0, 0, 0);
+            border-radius: 100px;
+            border-collapse: collapse;
+            text-align: center;
+           
+        }
+        th,td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+
+        <h1>STUDENTS</h1>
+
+        <table>
+
+            <h1>J SPIDER</h1>
+        <table>
+           <tr>
+                <th>Name</th>
+                <th>MOBILE NUMBER</th>
+                <th>Coures name</th>
+                <th>date of joining</th>
+                <th>email</th>
+            
+           </tr>
+
+            {% for i in qso %}
+
+            <tr>
+                <td>{{  i.name }}</td>
+                <td>{{  i.mob }}</td>
+                <td>{{  i.course_name }}</td>
+                <td>{{  i.doj }}</td>
+                <td>{{  i.email }}</td>
+            </tr>
+
+            {% endfor %}
+
+
+
+
+
+
+        </table>
+
+
+
+    </center>
+</body>
+</html>
